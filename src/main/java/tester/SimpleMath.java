@@ -1,20 +1,20 @@
 package tester;
 
-public abstract class SimpleMath {
+public class SimpleMath {
 
-    public Integer Add(Integer first, Integer second) {
+    public int Add(Integer first, Integer second) {
         return first + second;
     }
 
-    public Integer Subtract(Integer first, Integer second) {
+    public int Subtract(Integer first, Integer second) {
         return first - second;
     }
 
-    public Integer Multiply(Integer first, Integer second) {
+    public int Multiply(Integer first, Integer second) {
         return first * second;
     }
 
-    public Integer Divide(Integer first, Integer second) {
+    public int Divide(Integer first, Integer second) {
         return first / second;
     }
 }
