@@ -162,4 +162,11 @@ class SimpleMathTest {
             sm.Subtract(3, null);
         });
     }
+
+    @Test
+    public void testDivideZeroByZero() {
+        Assertions.assertThrows(ArithmeticException.class, () -> {
+            assertEquals(0, sm.Divide(0, 0));
+        });
+    }
 }
