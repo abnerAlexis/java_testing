@@ -29,4 +29,42 @@ class SimpleMathTest {
             sm.Add(2, null);
         });
     }
+    @Test
+    public void testSubtract(){
+        assertEquals(6, sm.Subtract(12, 6));
+    }
+
+    @Test
+    public void testSubtractSecondNumIsGreater(){
+        assertEquals(-18, sm.Subtract(2, 20));
+    }
+
+    @Test
+    public void testSubtractNegativeNum(){
+        assertEquals(4, sm.Subtract(2, -2));
+    }
+
+    @Test
+    public void testSubtractZero(){
+        assertEquals(2, sm.Subtract(2, 0));
+    }
+
+    @Test
+    public void testSubtractFromZero(){
+        assertEquals(-10, sm.Subtract(0, 10));
+    }
+
+    @Test ()
+    public void testSubtractFirstParamNull(){
+        Assertions.assertThrows(NullPointerException.class, () ->{
+            sm.Subtract(null, 5);
+        });
+    }
+
+    @Test()
+    public void testSubtractSecondParamNull() {
+        Assertions.assertThrows(NullPointerException.class, () ->{
+            sm.Subtract(3, null);
+        });
+    }
 }
