@@ -3,6 +3,9 @@ package tester;
 public class SimpleMath {
 
     public int Add(Integer first, Integer second) {
+        if (first == null || second == null) {
+            throw new NullPointerException("Arguments cannot be null.");
+        }
         return first + second;
     }
 
