@@ -1,5 +1,5 @@
 ## Directory-based project format:
+/shelf/
 .idea/
-*.iml
-.clover
 target/
+java_testing.iml
